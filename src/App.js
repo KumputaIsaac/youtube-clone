@@ -18,7 +18,8 @@ export default function App() {
 
     return (
       <Container>
-        <Form onSubmit={onsubmit}> 
+        <div className="mx-auto">
+          <Form onSubmit={onsubmit} className='mb-5'> 
             <Row>
               <Col>
                 <Form.Control size="lg" type="text" placeholder="Search Video" onChange={onchange}/>
@@ -28,6 +29,8 @@ export default function App() {
               </Col>
           </Row>
         </Form>
+        </div>
+        
         
         <Video query={query}/>
     </Container>

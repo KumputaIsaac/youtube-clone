@@ -1,14 +1,29 @@
 import React from 'react'
+import './suggestion.css'
 import {ListGroup} from 'react-bootstrap'
 
-export default function Suggestion() {
+export default ({videoList,changedselectedvideo})=> {
+
+    const changedselected =(data)=>{
+        changedselectedvideo(data)
+    }
+
     return (
-        <ListGroup>
-            <ListGroup.Item>Cras justo odio</ListGroup.Item>
-            <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-            <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-            <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-            <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-        </ListGroup>
+        <React.Fragment>
+            {videoList.length>0 &&(
+                videoList.map(data=>(
+                <ListGroup.Item onClick={()=>{changedselected(data)}}>
+                    <div className='flex'>
+                        <div>
+                            <img src={data.thumbnails.medium.url} alt="scfv"/>
+                        </div>
+                        <div>
+                            {data.title}
+                        </div>
+                    </div>
+                    
+                </ListGroup.Item>))
+            )}
+        </React.Fragment>
     )
 }
