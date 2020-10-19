@@ -13,6 +13,7 @@ export default ({query})=> {
 
      const [videoList, setVideoList] = useState([])
      const [selectedVideo, setselectedVideo] = useState([])
+    //  const [error, seterror] = useState(false)
      
 
     useEffect(() => {
@@ -43,7 +44,7 @@ export default ({query})=> {
                 </Col>
                 <Col xs={12} lg={4} style={{border:'2px solid black'}}>
                 <ListGroup>
-                    <Suggestion videoList={videoList} changedselectedvideo={selectedVideoCallback}/>
+                    <Suggestion videoList={videoList} changedselectedvideo={selectedVideoCallback} selectedVideo={selectedVideo.id}/>
                     
                 </ListGroup>
                 </Col>

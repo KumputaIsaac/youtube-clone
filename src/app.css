@@ -5,4 +5,13 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center;
+    background-image: radial-gradient(rgb(148, 216, 150), rgb(9, 255, 0));
+}
+
+div{
+    border:none !important;
+}
+
+div.list-group-item{
+    border-bottom: 1px solid black !important
 }

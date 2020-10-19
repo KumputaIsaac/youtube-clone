@@ -5,7 +5,7 @@ import Video from './components/Video';
 export default function App() {
 
   const [search,setSearch]=useState('')
-  const [query,setQuery]=useState('')
+  const [query,setQuery]=useState('food')
 
   onsubmit=(e)=>{
     e.preventDefault();
@@ -18,11 +18,11 @@ export default function App() {
 
     return (
       <Container>
-        <div className="mx-auto">
-          <Form onSubmit={onsubmit} className='mb-5'> 
+        <div>
+          <Form onSubmit={onsubmit} className='my-5'> 
             <Row>
               <Col>
-                <Form.Control size="lg" type="text" placeholder="Search Video" onChange={onchange}/>
+                <Form.Control size="lg" type="search" placeholder="Enter Video" onChange={onchange}/>
               </Col>
               <Col>
                 <Button variant="primary" size="lg">Search </Button>
