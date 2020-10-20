@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Oswald&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -5,8 +8,10 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-image: radial-gradient(rgb(148, 216, 150), rgb(9, 255, 0));
-    
+    background: rgb(44,193,191);
+    background: radial-gradient(circle, rgba(44,193,191,1) 24%, rgba(0,212,255,1) 35%, rgba(68,208,214,1) 61%);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 div{
@@ -25,6 +30,10 @@ form{
 input{
     padding: 10px;
     border: none;
+    width: 650px;
+}
+input:focus{
+    outline: none;
 }
 
 button{
@@ -32,3 +41,8 @@ button{
     border: none;
 }
 
+@media only screen and (max-width: 768px) {
+    input {
+     width: 200px;
+    }
+  }
