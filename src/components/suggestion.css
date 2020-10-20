@@ -25,3 +25,37 @@ img{
       text-align: center;
     }
   }
+  @media only screen and (min-height: 640px) {
+    div.container {
+      margin-bottom: 60px;
+    }
+  }
+
+  @media only screen and (min-height: 731px) {
+    div.container {
+      margin-bottom: 160px;
+    }
+  }
+
+  @media only screen and (min-height: 823px) {
+    div.container {
+      margin-bottom: 250px;
+    }
+  }
+
+  @media only screen and (min-height: 667px) {
+    div.container {
+      margin-bottom: 90px;
+    }
+  }
+
+  @media only screen and (min-height: 736px) {
+    div.container {
+      margin-bottom: 150px;
+    }
+  }
+  @media only screen and (min-height: 812px) {
+    div.container {
+      margin-bottom: 240px;
+    }
+  }

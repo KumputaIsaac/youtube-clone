@@ -1,4 +1,5 @@
 import React from 'react'
+import './singlevideos.css'
 
 export default ({id,Title,Description})=> {
     return (
