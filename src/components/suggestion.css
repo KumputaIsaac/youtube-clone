@@ -18,3 +18,10 @@ img{
 .channel{
     font-size: small;
 }
+
+@media only screen and (max-width: 600px) {
+    .flex {
+      display: block;
+      text-align: center;
+    }
+  }

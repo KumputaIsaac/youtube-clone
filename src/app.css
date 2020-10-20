@@ -6,6 +6,7 @@ body{
     justify-content: center;
     align-items: center;
     background-image: radial-gradient(rgb(148, 216, 150), rgb(9, 255, 0));
+    
 }
 
 div{
@@ -15,3 +16,19 @@ div{
 div.list-group-item{
     border-bottom: 1px solid black !important
 }
+
+form{
+    text-align: center;
+    outline: none;
+}
+
+input{
+    padding: 10px;
+    border: none;
+}
+
+button{
+    padding: 10px;
+    border: none;
+}
+

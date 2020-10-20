@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './app.css'
-import { Container, Row, Col,Form,Button} from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 import Video from './components/Video';
 export default function App() {
 
@@ -19,16 +19,10 @@ export default function App() {
     return (
       <Container>
         <div>
-          <Form onSubmit={onsubmit} className='my-5'> 
-            <Row>
-              <Col>
-                <Form.Control size="lg" type="search" placeholder="Enter Video" onChange={onchange}/>
-              </Col>
-              <Col>
-                <Button variant="primary" size="lg">Search </Button>
-              </Col>
-          </Row>
-        </Form>
+          <form onSubmit={onsubmit} className='my-5'>
+            <input  type="search" placeholder="Enter Video" onChange={onchange}/>
+            <button type="">search</button>
+          </form>
         </div>
         
         
